@@ -1,0 +1,171 @@
+.gym-contact {
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+  background: #f5f7f4;
+  color: #10171b;
+}
+
+.gym-contact-info {
+  padding-top: 15px;
+}
+
+.gym-contact-info .gym-section-tag {
+  color: #659b13;
+}
+
+.gym-contact-info h2 {
+  margin: 20px 0;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.gym-contact-info h2 span {
+  color: #659b13;
+}
+
+.gym-contact-description {
+  margin-bottom: 35px;
+  color: #606b70;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.gym-contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin: 25px 0;
+}
+
+.gym-contact-detail > span {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: #b8ff38;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+.gym-contact-detail h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.gym-contact-detail p {
+  margin: 0;
+  color: #667078;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.gym-contact-form {
+  padding: 35px;
+  background: #fff;
+  border: 1px solid #e1e6df;
+  border-radius: 14px;
+  box-shadow: 0 15px 45px #10171b08;
+}
+
+.gym-contact-form > h3 {
+  margin: 0 0 8px;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.gym-contact-form > p:not(.gym-form-success) {
+  margin-bottom: 25px;
+  color: #687278;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.gym-contact-form label {
+  display: block;
+  margin: 17px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gym-contact-form input,
+.gym-contact-form select,
+.gym-contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  background: #f8faf7;
+  border: 1px solid #dfe5dc;
+  border-radius: 6px;
+  outline: none;
+  color: #10171b;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.gym-contact-form input:focus,
+.gym-contact-form select:focus,
+.gym-contact-form textarea:focus {
+  border-color: #659b13;
+}
+
+.gym-contact-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.gym-contact-form button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 16px;
+  background: #b8ff38;
+  border: none;
+  border-radius: 6px;
+  color: #10150c;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gym-contact-form button:hover {
+  background: #a0e923;
+  transform: translateY(-2px);
+}
+
+.gym-contact-form button span {
+  margin-left: 8px;
+}
+
+.gym-contact-form .gym-form-success {
+  margin-top: 18px;
+  color: #36730b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .gym-contact {
+    padding: 75px 6%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gym-contact {
+    padding: 60px 5%;
+  }
+
+  .gym-contact-form {
+    padding: 23px 18px;
+  }
+
+  .gym-contact-form > h3 {
+    font-size: 20px;
+  }
+}

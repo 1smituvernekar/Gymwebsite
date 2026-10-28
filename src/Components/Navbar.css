@@ -1,0 +1,118 @@
+.gym-navbar {
+  width: 90%;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b1115;
+  border-bottom: 1px solid #263238;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.gym-logo {
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.gym-logo span {
+  color: #b8ff38;
+}
+
+.gym-logo-icon {
+  margin-right: 9px;
+}
+
+.gym-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.gym-nav-links a {
+  color: #d4dadd;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.gym-nav-links a:hover {
+  color: #b8ff38;
+}
+
+.gym-nav-links .gym-nav-join {
+  background: #b8ff38;
+  color: #10150c;
+  padding: 13px 22px;
+  border-radius: 7px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.gym-nav-links .gym-nav-join:hover {
+  background: #d0ff77;
+  color: #10150c;
+  transform: translateY(-3px);
+}
+
+.gym-menu-btn {
+  display: none;
+  background: transparent;
+  color: #b8ff38;
+  border: none;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .gym-navbar {
+    padding: 16px 5%;
+  }
+
+  .gym-menu-btn {
+    display: block;
+  }
+
+  .gym-nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: #0b1115;
+    border-bottom: 1px solid #263238;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+  }
+
+  .gym-nav-links.show-menu {
+    display: flex;
+    animation: gymMenuIn 0.3s ease;
+  }
+
+  .gym-nav-links a {
+    font-size: 15px;
+  }
+
+  .gym-nav-links .gym-nav-join {
+    text-align: center;
+  }
+}
+
+@keyframes gymMenuIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

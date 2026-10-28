@@ -1,0 +1,162 @@
+.gym-about {
+  padding: 100px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  background: #f5f7f4;
+  color: #10171b;
+}
+
+.gym-section-tag {
+  color: #659b13;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.gym-about-heading h2 {
+  margin: 18px 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.gym-about-heading h2 span {
+  color: #659b13;
+}
+
+.gym-about-heading > p:not(.gym-section-tag) {
+  color: #59646a;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.gym-about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  border-radius: 6px;
+  background: #b8ff38;
+  color: #10150c;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+
+.gym-about-btn:hover {
+  background: #a0e923;
+  transform: translateY(-3px);
+}
+
+.gym-about-gallery {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.gym-about-gallery img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.gym-about-gallery img:hover {
+  transform: scale(1.025);
+}
+
+.gym-about-main-img {
+  height: 370px;
+}
+
+.gym-about-small-img {
+  height: 260px;
+}
+
+.gym-about-features {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.gym-feature {
+  padding: 24px 18px;
+  background: #fff;
+  border: 1px solid #e5e9e1;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gym-feature:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #10171b12;
+}
+
+.gym-feature-icon {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.gym-feature h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.gym-feature p {
+  margin: 0;
+  color: #667078;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+@media (max-width: 1000px) {
+  .gym-about {
+    padding: 75px 6%;
+    gap: 35px;
+  }
+
+  .gym-about-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .gym-about {
+    padding: 60px 5%;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .gym-about-gallery {
+    gap: 10px;
+  }
+
+  .gym-about-main-img {
+    height: 280px;
+  }
+
+  .gym-about-small-img {
+    height: 200px;
+  }
+
+  .gym-about-features {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gym-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .gym-feature-icon {
+    margin: 0;
+  }
+}

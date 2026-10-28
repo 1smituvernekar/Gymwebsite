@@ -1,0 +1,116 @@
+.gym-testimonials {
+  padding: 95px 7%;
+  background: #0b1115;
+  color: #fff;
+}
+
+.gym-testimonial-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.gym-testimonial-heading .gym-section-tag {
+  color: #b8ff38;
+}
+
+.gym-testimonial-heading h2 {
+  margin: 15px 0;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 900;
+}
+
+.gym-testimonial-heading h2 span {
+  color: #b8ff38;
+}
+
+.gym-testimonial-heading > p:last-child {
+  color: #aab4b9;
+  font-size: 14px;
+}
+
+.gym-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.gym-review-card {
+  padding: 30px;
+  background: #111a20;
+  border: 1px solid #28343a;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gym-review-card:hover {
+  transform: translateY(-7px);
+  border-color: #b8ff38;
+}
+
+.gym-review-stars {
+  color: #b8ff38;
+  letter-spacing: 4px;
+  font-size: 17px;
+}
+
+.gym-review-text {
+  min-height: 100px;
+  margin: 22px 0;
+  color: #d0d7db;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.gym-review-person {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #28343a;
+  padding-top: 20px;
+}
+
+.gym-review-person img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.gym-review-person h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.gym-review-person p {
+  margin: 0;
+  color: #aab4b9;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .gym-testimonials {
+    padding: 70px 6%;
+  }
+
+  .gym-review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .gym-testimonials {
+    padding: 60px 5%;
+  }
+
+  .gym-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gym-review-card {
+    padding: 25px;
+  }
+
+  .gym-review-text {
+    min-height: auto;
+  }
+}
